@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="oi.css">
+  </head>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+      <h2 class="inactive underlineHover"><a href="sinup.html">Sign Up</a></h2>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="userr.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form>
+        <input type="email" id="Email" class="fadeIn second" name="email" placeholder="Email">
+        <input type="password" id="password" class="fadeIn third" name="psw" placeholder="Password">
+        <input type="button" class="fadeIn fourth" value="Log In" onclick="check(this.form)">
+      </form>
+      <script language="javascript">
+        function check(form)/*function to check userid & password*/
+        {
+        if (form.email.value==="" || form.psw.value===""){
+        alert("please fill up the form")
+        }
+        else{
+            window.location.replace("hello.html")
+        }
+         
+        }
+        </script>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
+</html>
